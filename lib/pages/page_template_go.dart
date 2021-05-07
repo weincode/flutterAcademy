@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:weincode_design_system/atoms/wc_text.dart';
+import 'package:weincode_design_system/molecules/header.dart';
 class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: OurAppBar(title: 'transiciones de páginas',),
       body: Center(
         child: ElevatedButton(
           child: Text('Go!'),
@@ -46,9 +48,9 @@ Route _createRoute() {
 class Page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: OurAppBar(title: 'Página 2',),
       body: Center(
-        child: Text('Page 2'),
+        child: H2(text:'Page 2'),
       ),
     );
   }

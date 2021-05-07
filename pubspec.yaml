@@ -23,6 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  weincode_design_system:
+    git:
+      url: https://github.com/weincode/weincode_design_system
 
 
   # The following adds the Cupertino Icons font to your application.
