@@ -49,7 +49,7 @@ packages:
       name: cupertino_icons
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.2"
+    version: "1.0.3"
   fake_async:
     dependency: transitive
     description:
@@ -154,10 +154,9 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "78914ee0bd349bb82d0dfd1c014d62e8c8d35ba6"
+      resolved-ref: "258ba61aacc020a5c85f73c644b15ea209f1e116"
       url: "https://github.com/weincode/weincode_design_system"
     source: git
-    version: "0.0.1"
+    version: "1.0.0+5"
 sdks:
-  dart: ">=2.12.0-0.0 <3.0.0"
-  flutter: ">=1.17.0"
+  dart: ">=2.12.0 <3.0.0"

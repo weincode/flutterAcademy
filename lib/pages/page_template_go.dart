@@ -50,7 +50,7 @@ class Page2 extends StatelessWidget {
     return Scaffold(
       appBar: OurAppBar(title: 'Página 2',),
       body: Center(
-        child: H2(text:'Page 2'),
+        child: H2(text:'Page 2', key: Key('Subtitulo'),),
       ),
     );
   }
