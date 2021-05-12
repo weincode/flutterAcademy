@@ -21,16 +21,12 @@ class _ExampleCupertinoDownloadButtonState extends State<ExampleCupertinoDownloa
     super.initState();
     _downloadController = SimulatedDownloadController(
         onOpenDownload: () {
-        _openDownload();
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Open App '),
+            ),
+          );
       }
-    );
-  }
-
-  void _openDownload() {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Open App '),
-      ),
     );
   }
 
@@ -112,10 +108,7 @@ class DownloadButton extends StatelessWidget {
       ),
     );
   }
-
-  Widget _buildButtonShape({
-    required Widget child,
-  }) {
+  Widget _buildButtonShape({required Widget child}) {
     return AnimatedContainer(
       duration: transitionDuration,
       curve: Curves.ease,
@@ -132,7 +125,6 @@ class DownloadButton extends StatelessWidget {
       child: child,
     );
   }
-
   Widget _buildText(BuildContext context) {
     final text = _isDownloaded ? 'OPEN' : 'GET';
     final opacity = _isDownloading || _isFetching ? 0.0 : 1.0;
