@@ -6,7 +6,7 @@ import 'package:flutter_academy/pages/animations/physics_simulation.dart';
 import 'package:flutter_academy/pages/design/drawer2screen.dart';
 import 'package:flutter_academy/pages/design/tabBar.dart';
 import 'package:flutter_academy/pages/design/ui_based_orientation.dart';
-import 'package:flutter_academy/pages/effects/downloadBtn.dart';
+import 'package:flutter_academy/pages/effects/downloadbtn/downloadBtn.dart';
 
 main() {
   runApp(MaterialApp(
